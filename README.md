@@ -1,50 +1,88 @@
-# React + TypeScript + Vite
+# Job Listing Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React-based job listing application that allows users to view job listings and detailed job descriptions. The app uses Tailwind CSS for styling and TypeScript for type safety. It features routing to navigate between the homepage and job description pages.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Technologies Used](#technologies-used)
+- [Screenshots](#screenshots)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Home Page**: Displays a list of job cards.
+- **Job Details Page**: Provides detailed information about a job, including the job description, requirements, and other relevant details.
+- **Responsive Design**: The application is responsive and works on different screen sizes.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/SalasDelil/jobs-portal.git
+    cd job-listing-app
+    ```
+
+2. **Install dependencies**:
+    ```bash
+    npm install
+    ```
+
+3. **Start the development server**:
+    ```bash
+    npm run dev
+    ```
+
+    The app will be available at [http://localhost:5173](http://localhost:5173).
+
+## Usage
+
+- **View Job Listings**: Navigate to the home page to see all available job listings.
+- **View Job Details**: Click on any job card to view the detailed job description.
+
+## Project Structure
+
+```plaintext
+├── assets
+│   ├── job1.jpg
+│   ├── job2.jpg
+│   └── ...
+├── src
+│   ├── assets
+│   ├── components
+│   │   ├── JobCard.tsx
+│   │   ├── Dashboard.tsx
+│   │   ├── JobDescription.tsx
+│   │   ├── LandingPage.tsx
+│   │   └── Sidebar.tsx
+│   ├── posts
+│   │   ├── Posts.tsx
+│   │   ├── jobs.json
+│   ├── App.tsx
+│   ├── index.tsx
+│   └── ...
+├── .gitignore
+├── package.json
+├── README.md
+└── tsconfig.json
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Technologies Used
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+**React**: JavaScript library for building user interfaces.
+**TypeScript**: Typed superset of JavaScript that compiles to plain JavaScript.
+**React Router**: Routing library for React applications.
+**Tailwind CSS**: Utility-first CSS framework for styling.
+**Node.js**: JavaScript runtime for server-side development.
+**Vite**: Next-generation frontend tooling for fast builds and development.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Screenshots
+
+### Landing page for the Jobs listing application, press to see the description.
+![Jobs List Application Screenshot](public/Screenshot1.png)
+
+### Description page for the selected job with specifications and calendar
+![Jobs List Application Screenshot](public/Screenshot2.png)
+
