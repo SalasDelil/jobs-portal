@@ -67,16 +67,17 @@ This is a React-based job listing application that allows users to view job list
 ├── package.json
 ├── README.md
 └── tsconfig.json
+└── ...
 ```
 
 ## Technologies Used
 
-**React**: JavaScript library for building user interfaces.
-**TypeScript**: Typed superset of JavaScript that compiles to plain JavaScript.
-**React Router**: Routing library for React applications.
-**Tailwind CSS**: Utility-first CSS framework for styling.
-**Node.js**: JavaScript runtime for server-side development.
-**Vite**: Next-generation frontend tooling for fast builds and development.
+- **React**: JavaScript library for building user interfaces.
+- **TypeScript**: Typed superset of JavaScript that compiles to plain JavaScript.
+- **React Router**: Routing library for React applications.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **Node.js**: JavaScript runtime for server-side development.
+- **Vite**: Next-generation frontend tooling for fast builds and development.
 
 ## Screenshots
 
