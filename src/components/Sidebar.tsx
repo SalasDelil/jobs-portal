@@ -16,8 +16,8 @@ interface AboutProps {
 
 const Sidebar: React.FC<{ about: AboutProps }> = ({ about }) => {
   return (
-    <div className="p-6 bg-gray-100 rounded-md shadow-md text-custom-color">
-      <section className="mb-6">
+    <div className="p-6 bg-gray-100 rounded-border-rad shadow-md text-custom-color">
+      <section className="">
         <h2 className="font-black">About</h2>
         <ul className="mt-2 space-y-2">
           <li className="flex items-center mt-2">
@@ -77,8 +77,8 @@ const Sidebar: React.FC<{ about: AboutProps }> = ({ about }) => {
           </li>
         </ul>
       </section>
-
-      <section className="mb-6">
+      <div className="w-full h-px my-4 bg-slate-300"></div>
+      <section className="">
         <h2 className="font-black">Categories</h2>
         <div className="mt-2 space-x-2">
           <span className="inline-block bg-yellow-200 px-2 py-1 rounded-full">
@@ -89,7 +89,7 @@ const Sidebar: React.FC<{ about: AboutProps }> = ({ about }) => {
           </span>
         </div>
       </section>
-
+      <div className="w-full h-px my-4 bg-slate-300"></div>
       <section>
         <h2 className="font-black">Required Skills</h2>
         <div className="mt-2 space-y-2">
